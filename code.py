@@ -1,3 +1,11 @@
+'''
+NeoTrellis/nrf52840 Feather Zoom Keyboard
+
+(c) 2020 George White
+
+MIT License
+'''
+
 import time
 from board import SDA, SCL
 from adafruit_neotrellis.neotrellis import NeoTrellis
