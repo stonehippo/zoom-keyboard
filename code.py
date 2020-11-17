@@ -75,7 +75,7 @@ def send(event):
     elif event.edge == NeoTrellis.EDGE_RISING:
         trellis.pixels[event.number] = ON
         if event.number == 14:
-             k.press(Keycode.SPACE)
+             k.press(Keycode.SPACE) # turn on push to talk 
 
 for i in range(KEYCOUNT):
     # activate rising edge events on all keys
