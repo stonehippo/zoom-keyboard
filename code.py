@@ -63,7 +63,9 @@ def send(event):
         elif event.number == 5:
            k.send(Keycode.SHIFT, Keycode.COMMAND, Keycode.F) # enter/leave full screen
         elif event.number == 4:
-            k.send(Keycode.SPACE)
+            k.send(Keycode.COMMAND,Keycode.SPACE) # use Spotlight to open Zoom or switch Zoom windows
+            time.sleep(0.01)
+            kl.write("zoom.us\n")
         elif event.number == 3:
             k.send(Keycode.SHIFT, Keycode.COMMAND, Keycode.R) # record locally
         elif event.number == 2:
